@@ -1,0 +1,130 @@
+@Metadata.layer: #CORE
+annotate view ZTUMC_ITEM
+    with 
+{
+    @UI.facet: [{  
+    id : 'Item',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Item Info',
+    position: 10
+}]
+    @UI.identification: [{ position: 10 , importance: #HIGH , label : 'Document Number' }]
+     @UI :{lineItem: [{ position: 10 ,importance: #HIGH }]}
+    @UI:{
+        selectionField: [{ position : 10 }]
+    }
+    Docno;
+    
+    @UI.identification: [{ position: 20 , importance: #HIGH , label : 'Item Number' }]
+     @UI :{
+        lineItem: [{ position: 20 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 20 }]
+    }
+    ItemNo;
+    
+    @UI.identification: [{ position: 30 , importance: #HIGH , label : 'Status' }]
+     @UI :{
+        lineItem: [{ position: 30 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 30 }]
+    }
+    Status;
+    
+    @UI.identification: [{ position: 40 , importance: #HIGH , label : 'Quantity' }]
+     @UI :{
+        lineItem: [{ position: 40 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 40 }]
+    }
+    Quantity;
+    
+    @UI.identification: [{ position: 50 , importance: #HIGH , label : 'Currency' }]
+     @UI :{
+        lineItem: [{ position: 50 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 50 }]
+    }
+    Currency;
+    
+    @UI.identification: [{ position: 60 , importance: #HIGH , label : 'Amount' }]
+     @UI :{
+        lineItem: [{ position: 60 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 60 }]
+    }
+    Amount;
+    
+    @UI.identification: [{ position: 70 , importance: #HIGH , label : 'Tax Amount' }]
+     @UI :{
+        lineItem: [{ position: 70 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 70 }]
+    }
+    TaxAmt;
+    
+    @UI.identification: [{ position: 71 , importance: #HIGH , label : 'Total Amount' }]
+     @UI :{
+        lineItem: [{ position: 71 ,
+                      importance: #HIGH }]
+      }
+    totalAmount;
+    
+    @UI.identification: [{ position: 72 , importance: #HIGH , label : 'Discounted Amount' }]
+     @UI :{
+        lineItem: [{ position: 72 ,
+                      importance: #HIGH }]
+      }
+    DiscountedAmount;
+    
+    @UI.identification: [{ position: 73 , importance: #HIGH , label : 'Saved (in %)' }]
+     @UI :{
+        lineItem: [{ position: 73 ,
+                      importance: #HIGH }]
+      }
+    Saved;
+    
+    @UI.identification: [{ position: 80 , importance: #HIGH , label : 'Changed At' }]
+     @UI :{
+        lineItem: [{ position: 80 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 80 }]
+    }
+    ChangedAt;
+    
+    @UI.identification: [{ position: 90 , importance: #HIGH , label : 'Created At' }]
+     @UI :{
+        lineItem: [{ position: 90 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 90 }]
+    }
+    CreatedAt;
+    
+    @UI.identification: [{ position: 100 , importance: #HIGH , label : 'Created By' }]
+     @UI :{
+        lineItem: [{ position: 100 ,
+                      importance: #HIGH }]
+      }
+    @UI:{
+        selectionField: [{ position : 100 }]
+    }
+    CreatedBy;
+    
+}

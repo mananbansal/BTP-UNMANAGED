@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for details'
+define service ZSD_DETAILS {
+  expose ZTUMI_CUSTOM;
+}

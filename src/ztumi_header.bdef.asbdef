@@ -1,0 +1,31 @@
+unmanaged implementation in class zbp_tumi_header unique;
+//strict ( 2 );
+
+define behavior for ZTUMI_HEADER alias hdr
+//late numbering
+lock master
+authorization master ( instance )
+etag master localLastChanged
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Docno;
+  association _item { create; }
+
+    action(features : instance) Approve result[1] $self;
+    action(features : instance) Reject  result[1] $self;
+
+  }
+
+define behavior for ZTUMI_ITEM alias itm
+//late numbering
+lock dependent by _header
+authorization dependent by _header
+etag master localLastChanged
+{
+  update;
+  delete;
+  field ( readonly ) Docno, ItemNo;
+  association _header;
+}

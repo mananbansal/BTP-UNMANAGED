@@ -1,0 +1,5 @@
+@EndUserText.label: 'service definition of header'
+define service ZSD_HEADER {
+  expose ZTUMC_HEADER;
+  expose ZTUMC_ITEM;
+}
